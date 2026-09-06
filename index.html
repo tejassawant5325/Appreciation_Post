@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fffaf4">
+    <title>Hey Momo</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E♥%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section class="intro" id="intro" aria-labelledby="introTitle">
+        <div class="intro-inner"><span class="intro-heart">♥</span>
+            <p id="introTitle">I made something for you.</p><small>Take your time.</small><button
+                class="button intro-button" id="enterButton">Enter <span>→</span></button>
+        </div>
+    </section><button class="music-toggle" id="musicToggle" aria-label="Play our song"
+        aria-pressed="false"><span>♪</span> Play our song</button>
+    <div class="story-progress" aria-hidden="true"><i></i><span>♥</span></div><audio id="ourSong" preload="none">
+        <source src="assets/music/Tum Ho Toh Saiyaara 128 Kbps.mp3" type="audio/mpeg">
+    </audio>
+    <main id="page" inert>
+        <section class="hero section" id="top">
+            <div class="petals" aria-hidden="true"></div>
+            <div class="hero-content">
+                <p class="eyebrow reveal">A little corner of the internet, just for you</p>
+                <h1 class="reveal delay-1">Hey, <span data-her-name>Purva</span> <b>♥</b></h1>
+                <div class="hero-copy reveal delay-2">
+                    <p>I don't say this enough.</p>
+                    <p>And honestly, I'm not even sure I know how to say it properly.</p>
+                    <p>So instead of trying to find the perfect words...</p>
+                    <p><em>I made you this.</em></p>
+                </div>
+                <p class="hero-note reveal delay-3">A small little place for everything I've never properly said.</p>
+                <p class="hero-closing reveal delay-3">For everything you've done.<br>For everything you've
+                    given.<br>And most importantly... <em>for staying.</em></p><a class="button reveal delay-4"
+                    href="#notice">There's something I want you to know <b>→</b></a>
+            </div>
+            <div class="scroll-cue" aria-hidden="true">scroll to begin <i></i></div>
+        </section>
+        <section class="notice section" id="notice">
+            <div class="content narrow">
+                <p class="eyebrow">01 / the things I see</p>
+                <h2 class="section-title">I Notice<span>.</span></h2>
+                <p class="lead">You probably don't realize how many little things I notice.</p>
+                <div class="notice-grid" id="noticeGrid"></div>
+            </div>
+        </section>
+        <section class="realize section">
+            <div class="content narrow">
+                <p class="eyebrow">02 / more than you know</p>
+                <h2 class="section-title">You Probably<br>Don't Realize<span>...</span></h2>
+                <div class="realize-lines" id="realizeLines"></div>
+                <p class="realize-emphasis reveal-on-scroll">She really thought about me.</p>
+            </div>
+        </section>
+        <section class="gifts section" id="gifts">
+            <div class="content narrow center">
+                <p class="eyebrow">03 / a small truth</p>
+                <h2 class="section-title">It Was Never<br>About The Gift<span>.</span></h2>
+                <div class="gift-intro">
+                    <p>Sometimes you didn't have much to give.</p>
+                    <p>But you still wanted to give me something.</p>
+                    <p>And that's something I'll never forget.</p>
+                </div>
+                <p class="gift-truth">The value of a gift was never in what it cost.<br>It was in the fact that <em>you
+                        thought of me.</em></p>
+                <div class="gift-grid" id="giftGrid" aria-label="Open a gift to reveal a message"></div>
+                <div class="gift-complete" id="giftComplete" aria-live="polite"><b>You opened everything.</b>
+                    <p>But honestly... I've only scratched the surface of everything I appreciate about you.</p>
+                </div>
+            </div>
+        </section>
+        <section class="through section" id="through">
+            <div class="content two-col">
+                <div>
+                    <p class="eyebrow">04 / every version of us</p>
+                    <h2 class="section-title">Through<br>Everything<span>.</span></h2>
+                    <p class="timeline-intro">Not just the easy parts.</p>
+                </div>
+                <ol class="timeline" aria-label="Our journey">
+                    <li class="reveal-on-scroll">The beginning</li>
+                    <li class="reveal-on-scroll">The good days</li>
+                    <li class="reveal-on-scroll">The difficult days</li>
+                    <li class="reveal-on-scroll">The confusing days</li>
+                    <li class="reveal-on-scroll">The moments we didn't have all the answers</li>
+                    <li class="timeline-final reveal-on-scroll"><small>And somehow...</small>YOU WERE STILL HERE.</li>
+                </ol>
+            </div>
+            <div class="content emotional-copy reveal-on-scroll">
+                <p>We've had good days.</p>
+                <p>We've had difficult days.</p>
+                <p>We've had moments where things weren't easy.</p>
+                <p>But through all of it, you never simply walked away.</p>
+                <p class="stayed">You stayed.</p>
+                <p>And I don't think I've ever properly told you how much that means to me.</p>
+            </div>
+        </section>
+        <section class="pause section">
+            <div class="content center">
+                <p class="pause-wait reveal-on-scroll">Wait.</p>
+                <p class="pause-first reveal-on-scroll">There's something I don't want you to miss.</p>
+                <p class="pause-second reveal-on-scroll">None of this is about what you've given me.<br><em>It's about
+                        who you are while giving it.</em></p>
+            </div>
+        </section>
+        <section class="memories section" id="memories">
+            <div class="content">
+                <p class="eyebrow">05 / kept close</p>
+                <h2 class="section-title">Our Little Memories<span>.</span></h2>
+                <p class="lead">Six moments. One story.</p>
+                <p class="memory-sub">And somehow, every version of us led to the next.</p>
+                <div class="memory-timeline" id="memoryTimeline" aria-label="Our journey through memories"></div>
+                <div class="final-memory-message" id="finalMemoryMessage"></div>
+            </div>
+        </section>
+        <section class="remember section">
+            <div class="content narrow">
+                <p class="eyebrow">06 / saved in my mind</p>
+                <h2 class="section-title">Things I'll Always<br>Remember<span>.</span></h2>
+                <div class="remember-list" id="rememberList"></div>
+            </div>
+        </section>
+        <section class="reasons section" id="reasons">
+            <div class="content center">
+                <p class="eyebrow">07 / a few more things</p>
+                <h2 class="section-title">A Little Box of Reasons<span>.</span></h2>
+                <p class="reasons-intro">I could probably give you a hundred reasons.</p>
+                <p class="reasons-intro">But let's start with a few.</p>
+                <div class="reason-box-container">
+                    <div class="reason-box" id="reasonBox">
+                        <div class="box-decoration">
+                            <span class="box-heart">♥</span>
+                            <div class="box-pattern">
+                                <span>•</span><span>♥</span><span>•</span>
+                                <span>♥</span><span>•</span><span>♥</span>
+                                <span>•</span><span>♥</span><span>•</span>
+                            </div>
+                        </div>
+                        <div class="box-label">LITTLE NOTES</div>
+                    </div>
+                    <div class="reason-note" id="reasonNote">
+                        <p id="reasonText" aria-live="polite"></p>
+                    </div>
+                </div>
+                <p class="special-reason-message" id="specialReasonMessage" aria-live="polite">And I don't think I'll ever stop being grateful for that.</p>
+                <p class="final-reason-message" id="finalReasonMessage" aria-live="polite">And I hope you know...<br>I choose you too. ♥</p>
+                <button class="button reason-button" id="reasonButton">Pick one for me ♥</button>
+            </div>
+        </section>
+        <section class="words section" id="words">
+            <div class="content words-content">
+                <p class="eyebrow">08 / what I mean to say</p>
+                <h2 class="section-title">If I Could Put It<br>Into Words<span>...</span></h2>
+                <div class="word-lines" id="wordLines"></div>
+            </div>
+        </section>
+        <section class="human section">
+            <div class="content center" id="humanMoment"></div>
+        </section>
+        <section class="letter-section section" id="letter">
+            <div class="content center">
+                <p class="eyebrow">09 / the honest part</p>
+                <h2 class="section-title">I Saved The Hardest<br>Thing To Say For Last<span>.</span></h2>
+                <p class="lead">Open it when you're ready.</p>
+                <p class="for-her">✉<br><span>For <b data-her-name>You</b></span></p>
+                <div class="envelope-wrap" id="envelopeWrap">
+                    <div class="envelope" aria-hidden="true">
+                        <div class="envelope-flap"></div>
+                        <div class="envelope-heart">♥</div>
+                    </div>
+                    <article class="letter-paper" id="letterPaper" aria-label="A personal letter">
+                        <div class="letter-body" id="letterBody"></div>
+                    </article>
+                </div><button class="button letter-button" id="letterButton" aria-expanded="false">Open it
+                    <span>♥</span></button>
+            </div>
+        </section>
+        <section class="final section" id="final">
+            <div class="final-photo" id="finalPhoto"></div>
+            <div class="final-overlay"></div>
+            <div class="final-content">
+                <p class="eyebrow">10 / with all my heart</p>
+                <h2>Thank You<span>.</span></h2>
+                <p class="final-for">For everything.</p>
+                <div class="final-copy">
+                    <p>Thank you for every little thing.</p>
+                    <p>Thank you for every effort.</p>
+                    <p>Thank you for every surprise.</p>
+                    <p>Thank you for being there on the good days.</p>
+                    <p>And especially...</p>
+                    <p>Thank you for being there on the bad ones.</p>
+                </div>
+                <p class="quiet">I may not always know how to express it.<br>I may not always say it when I
+                    should.<br>But I hope you know...</p>
+                <div class="promise">
+                    <p>I SEE YOU.</p>
+                    <p>I APPRECIATE YOU.</p>
+                    <p>I AM GRATEFUL FOR YOU.</p>
+                    <p>I LOVE YOU.</p>
+                </div>
+                <p class="heart">♥</p>
+                <p class="made-it">You made it all the way here. ♥</p>
+            </div>
+        </section>
+    </main>
+    <footer><button id="easterEgg" class="easter-button">One last thing...</button>
+        <p>Made with a little bit of HTML,<br>a lot of memories,<br>and even more love.</p>
+        <p class="signature">— <span data-my-name>Me</span> ♥</p>
+    </footer>
+    <div class="photo-modal" id="photoModal" aria-hidden="true" role="dialog" aria-modal="true"
+        aria-label="Memory preview"><button class="modal-close" id="modalClose"
+            aria-label="Close photo preview">×</button><div class="modal-content"><button class="modal-nav modal-prev" id="modalPrev" aria-label="Previous memory">←</button><div class="modal-image-container"><img id="modalImage" alt=""></div><button class="modal-nav modal-next" id="modalNext" aria-label="Next memory">→</button></div><div class="modal-text"><p class="modal-counter" id="modalCounter">01 / 06</p><p class="modal-caption" id="modalCaption"></p><p class="modal-why-label">Why I kept this one</p><p class="modal-why" id="modalWhy"></p></div></div>
+    <div class="easter-overlay" id="easterOverlay" aria-live="polite"><button class="close-easter" id="closeEaster"
+            aria-label="Close">×</button>
+        <div>
+            <p class="egg-one">I'd still choose you.</p>
+            <p class="egg-two">Every time.</p>
+            <p class="egg-heart"><span data-her-name>You</span> ♥</p>
+            <p class="egg-signature">— <span data-my-name>Tejas</span></p>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
